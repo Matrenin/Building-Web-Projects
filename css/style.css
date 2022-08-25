@@ -1,0 +1,72 @@
+.btn__box {
+  max-width: 400px;
+  width: 100%;
+  margin: 40px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.btn__box button {
+  padding: 8px 20px;
+  background: #fff;
+  border: none;
+  border-bottom: 1px solid #000;
+  font-size: 16px;
+}
+
+.btn__box button:hover {
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+.content {
+  max-width: 900px;
+  width: 100%;
+  margin: 40px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.timer input {
+  width: 40px;
+  padding: 6px 12px;
+}
+
+.timer input:focus {
+  outline: 1px solid #75F0F2;
+}
+
+.btn__timer {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.btn__timer button {
+  margin: 0 10px;
+  padding: 4px 16px;
+  border: 1px solid #000;
+  border-radius: 6px;
+  background: #CFF7F8;
+}
+/*# sourceMappingURL=style.css.map */

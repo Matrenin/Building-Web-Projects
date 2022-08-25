@@ -1,25 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <script type="module" src="./js/main.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>HW-1</title>
 </head>
 <body>
-  <form id="datecalc">
-    <h3>Калькулятор дат</h3>
-    <label>
-        <strong>Первая дата:</strong>
-        <input type="date" name="firstDate" />
-    </label>
-    <label>
-        <strong>Вторая дата:</strong>
-        <input type="date" name="secondDate" />
-    </label>
-    <button type="submit">Расчитать промежуток</button>
-    <p id="datecalc__result"></p>
-  </form> 
+    
+        <div class="btn__box">
+            <button class="btnCalk" data-btn="calc">Калькулятор дат</button>
+            <button class="btnTimer" data-btn="timer">Таймер</button>
+        </div>
+
+        <div class="content">
+            <form class="calc hidden" id="datecalc">
+                <h3>Калькулятор дат</h3>
+                <label>
+                    <strong>Первая дата:</strong>
+                    <input type="date" name="firstDate" />
+                </label>
+                <label>
+                    <strong>Вторая дата:</strong>
+                    <input type="date" name="secondDate" />
+                </label>
+                <button type="submit">Расчитать промежуток</button>
+                <p id="datecalc__result"></p>
+            </form>
+
+            <form class="timer hidden" action="#">
+                <h3>Таймер</h3>
+                <label for="minutes">Минуты: </label>
+                <input type="text" id="minutes" autocomplete="off">
+                <label for="seconds">Секунды: </label>
+                <input type="text" id="seconds" autocomplete="off">
+
+                <div class="btn__timer">
+                    <button class="start">Start</button>
+                    <button class="pause">Pause</button>
+                    <button class="stop">Stop</button>
+                </div>
+            </form>
+        </div>
+
+        
+    <script type="module" src="js/main.js"></script>
+
 </body>
 </html>
